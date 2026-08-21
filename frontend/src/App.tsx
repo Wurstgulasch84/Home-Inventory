@@ -63,8 +63,13 @@ function App({ hass: hassProp }: AppProps) {
 
     if (dataParam && hass) {
       try {
-        const { room, cupboard } = JSON.parse(atob(dataParam));
-        if (room && cupboard) {
+        const { room, cupboard, shelf } = JSON.parse(atob(dataParam));
+        if (room && cupboard && shelf) {
+          useAppStore.getState().setSelectedRoom(room);
+          useAppStore.getState().setSelectedCupboard(cupboard);
+          useAppStore.getState().setSelectedShelf(shelf);
+          useAppStore.getState().setView('organizers');
+        } else if (room && cupboard) {
           useAppStore.getState().setSelectedRoom(room);
           useAppStore.getState().setSelectedCupboard(cupboard);
           useAppStore.getState().setView('shelves');

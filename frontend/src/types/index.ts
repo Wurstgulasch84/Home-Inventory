@@ -34,6 +34,7 @@ export interface Cupboard {
 export interface Shelf {
   id: number;
   name: string;
+  image?: string;
   organizerCount: number;
   itemCount: number;
 }
@@ -68,7 +69,7 @@ export interface OrganizersResponse {
 export interface Config {
   allow_structure_modification: boolean;
   qr_redirect_url?: string;
-  language: 'ro' | 'en';
+  language: 'ro' | 'en' | 'de';
 }
 
 // State Types
