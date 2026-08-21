@@ -23,6 +23,8 @@ export interface Translations {
     name: string;
     infoViewPress: string;
     connectingHA: string;
+    uploadingImage: string;
+    imageUploaded: string;
   };
   rooms: {
     title: string;
@@ -137,6 +139,8 @@ export const translations: Record<Language, Translations> = {
       name: 'Name',
       infoViewPress: 'Lange drücken oder Rechtsklick zum Bearbeiten',
       connectingHA: 'Verbindung mit Home Assistant wird hergestellt...',
+      uploadingImage: 'Bild wird hochgeladen...',
+      imageUploaded: '✓ Bild hochgeladen',
     },
     rooms: {
       title: 'Räume',
@@ -249,6 +253,8 @@ export const translations: Record<Language, Translations> = {
       name: 'Nume',
       infoViewPress: 'Apasă lungă sau click dreapta pentru editare',
       connectingHA: 'Se conectează la Home Assistant...',
+      uploadingImage: 'Se încarcă imaginea...',
+      imageUploaded: '✓ Imagine încărcată',
     },
     rooms: {
       title: 'Camere',
@@ -360,6 +366,8 @@ export const translations: Record<Language, Translations> = {
       name: 'Name',
       infoViewPress: 'Touch longer or right click to edit',
       connectingHA: 'Connecting to Home Assistant...',
+      uploadingImage: 'Uploading image...',
+      imageUploaded: '✓ Image uploaded',
     },
     rooms: {
       title: 'Rooms',

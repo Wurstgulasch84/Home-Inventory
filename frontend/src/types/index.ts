@@ -21,6 +21,7 @@ export interface Hass {
 export interface Room {
   id: number;
   name: string;
+  image?: string;
   itemCount: number;
 }
 

@@ -35,14 +35,24 @@ export class ApiService {
 
   // Rooms
   async getRooms(): Promise<Room[]> {
-    return this.hass.callApi('GET', 'home_inventory/rooms');
+    const data = await this.hass.callApi<Room[]>('GET', 'home_inventory/rooms');
+    return data.map((r) => ({ ...r, image: this.getImageUrl(r.image) }));
   }
 
-  async addRoom(name: string): Promise<{ id: number; name: string }> {
-    return this.hass.callApi('POST', 'home_inventory/rooms', { name });
+  async addRoom(
+    name: string,
+    image?: string
+  ): Promise<{ id: number; name: string }> {
+    return this.hass.callApi('POST', 'home_inventory/rooms', {
+      name,
+      image: image || '',
+    });
   }
 
-  async updateRoom(id: number, data: { name: string }): Promise<void> {
+  async updateRoom(
+    id: number,
+    data: { name?: string; image?: string }
+  ): Promise<void> {
     return this.hass.callApi('PATCH', 'home_inventory/rooms', { id, ...data });
   }
 
