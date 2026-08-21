@@ -25,6 +25,8 @@ export interface Translations {
     connectingHA: string;
     uploadingImage: string;
     imageUploaded: string;
+    in: string;
+    newLocation: string;
   };
   rooms: {
     title: string;
@@ -57,6 +59,7 @@ export interface Translations {
     deleteConfirm: string;
     noShelves: string;
     addFirst: string;
+    from: string;
   };
   organizers: {
     title: string;
@@ -68,6 +71,8 @@ export interface Translations {
     noOrganizers: string;
     addFirst: string;
     moveOrganizer: string;
+    moveTo: string;
+    cancelMove: string;
   };
   items: {
     title: string;
@@ -141,6 +146,8 @@ export const translations: Record<Language, Translations> = {
       connectingHA: 'Verbindung mit Home Assistant wird hergestellt...',
       uploadingImage: 'Bild wird hochgeladen...',
       imageUploaded: '✓ Bild hochgeladen',
+      in: 'in',
+      newLocation: 'Neuer Standort:',
     },
     rooms: {
       title: 'Räume',
@@ -173,6 +180,7 @@ export const translations: Record<Language, Translations> = {
       deleteConfirm: 'Möchtest du dieses Regal wirklich löschen?',
       noShelves: 'Keine Regale vorhanden',
       addFirst: 'Erstes Regal hinzufügen',
+      from: 'aus',
     },
     organizers: {
       title: 'Organizer',
@@ -184,6 +192,8 @@ export const translations: Record<Language, Translations> = {
       noOrganizers: 'Keine Organizer vorhanden',
       addFirst: 'Ersten Organizer hinzufügen',
       moveOrganizer: 'Organizer verschieben',
+      moveTo: 'Verschieben nach',
+      cancelMove: 'Verschieben abbrechen',
     },
     items: {
       title: 'Artikel',
@@ -255,6 +265,8 @@ export const translations: Record<Language, Translations> = {
       connectingHA: 'Se conectează la Home Assistant...',
       uploadingImage: 'Se încarcă imaginea...',
       imageUploaded: '✓ Imagine încărcată',
+      in: 'în',
+      newLocation: 'Locație nouă:',
     },
     rooms: {
       title: 'Camere',
@@ -287,6 +299,7 @@ export const translations: Record<Language, Translations> = {
       deleteConfirm: 'Sigur vrei să ștergi acest raft?',
       noShelves: 'Nu există rafturi',
       addFirst: 'Adaugă primul raft',
+      from: 'din',
     },
     organizers: {
       title: 'Organizatoare',
@@ -298,6 +311,8 @@ export const translations: Record<Language, Translations> = {
       noOrganizers: 'Nu există organizatoare',
       addFirst: 'Adaugă primul organizator',
       moveOrganizer: 'Mută organizatorul',
+      moveTo: 'Mută în',
+      cancelMove: 'Anulează mutarea',
     },
     items: {
       title: 'Articole',
@@ -368,6 +383,8 @@ export const translations: Record<Language, Translations> = {
       connectingHA: 'Connecting to Home Assistant...',
       uploadingImage: 'Uploading image...',
       imageUploaded: '✓ Image uploaded',
+      in: 'in',
+      newLocation: 'New location:',
     },
     rooms: {
       title: 'Rooms',
@@ -400,6 +417,7 @@ export const translations: Record<Language, Translations> = {
       deleteConfirm: 'Are you sure you want to delete this shelf?',
       noShelves: "There's no shelves",
       addFirst: 'Add first shelf',
+      from: 'from',
     },
     organizers: {
       title: 'Organizers',
@@ -411,6 +429,8 @@ export const translations: Record<Language, Translations> = {
       noOrganizers: "There's no organizers",
       addFirst: 'Add first organizer',
       moveOrganizer: 'Move the organizer',
+      moveTo: 'Move to',
+      cancelMove: 'Cancel move',
     },
     items: {
       title: 'Items',
